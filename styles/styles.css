@@ -1,0 +1,188 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del body */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9; /* Fondo suave */
+    color: #333; /* Color de texto */
+}
+
+/* Estilo del header */
+header {
+    padding: 10px 20px 0px;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+    position: sticky;
+    top: 0;
+    transition: background-color 0.3s ease; /* Transición suave al cambiar color */
+}
+header.sticky {
+    padding: 10px 20px 0px;
+    background: #b29fc5;
+    border-bottom: 1px solid #ccc;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Alinear el logo y la navegación */
+    align-items: center; /* Centrar verticalmente */
+}
+
+.logo-img {
+    width: 120px;
+    margin-left: 250px;    
+}
+.menu{
+    margin-right: 150px;
+}
+
+
+/* Estilos de navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Usar flex para la alineación */
+}
+
+nav ul li {
+    margin-left: 20px; /* Espaciado entre elementos */
+}
+
+nav a {
+    text-decoration: none;
+    color: #673ab7; /* Color de enlaces */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Transición suave al cambiar color */
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: #e91e63; /* Color al pasar el mouse */
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+/* Estilo del main */
+main {
+    padding: 20px;
+}
+
+/* Secciones */
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de los productos */
+.producto {
+    display: flex;
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #fce4ec; /* Color pastel */
+    border-radius: 8px;
+}
+
+.producto img {
+    width: 150px; /* Ajustar el tamaño de la imagen */
+    height: auto;
+    border-radius: 8px;
+}
+
+.producto-info {
+    margin-left: 15px;
+}
+
+.producto-info h3 {
+    color: #e91e63; /* Color del título del producto */
+}
+
+.producto-info p {
+    margin: 10px 0;
+}
+
+button {
+    background-color: hsl(262, 52%, 47%); /* Color de botón */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #9575cd; /* Color al pasar el mouse */
+}
+
+/* Estilo del footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin: 20px;
+}
+.logo-section {
+    flex: 1;
+    text-align: center;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff69b4;
+}
+.logo-footer img {
+    width: 120px;
+    vertical-align: middle;
+}
+.tagline {
+    font-size: 14px;
+    color: #5f9ea0;
+    margin-top: 10px;
+}
+.social-icons {
+    margin-top: 20px;
+}
+.social-icons a {
+    margin-right: 10px;
+    background-color: #e6f7f7;
+    padding: 5px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.social-footer{
+    width: 25px;
+}
+.quick-links, .opening-hours, .contact {
+    flex: 1;
+    text-align: center;
+}
+
+h3 {
+    color: #5f9ea0;
+    margin-bottom: 15px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    margin-bottom: 10px;
+}
+.book-order {
+    background-color: #e6f7f7;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #5f9ea0;
+    cursor: pointer;
+}
